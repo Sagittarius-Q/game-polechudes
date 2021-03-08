@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <title>Game</title>
+</head>
+
+<body>
+<div id="wrapper">
+    <div class="container">
+        <div class="top">
+            <div class="title">
+                <h1 id="question"></h1>
+            </div>
+
+            <div id="answer">
+            </div>
+        </div>
+        <div id="keyboard">
+        </div>
+
+    </div>
+    <div id="refresh">
+        <i class="fas fa-sync-alt"></i>
+    </div>
+    <div id="home">
+        <i class="fas fa-home"></i>
+    </div>
+    <div class="attempt">
+        <span class="attempt_text">you have 5 attempts</span>
+    </div>
+</div>
+<script th:src="@{/js/script.js}"></script>
+<script th:inline="javascript">
+    let question = {
+        hint : /*[[${question}]]*/ 'default',
+        answer : /*[[${answer}]]*/ 'default'
+    }
+    start(question);
+</script>
+</body>
+</html>

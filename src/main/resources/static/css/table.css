@@ -1,0 +1,51 @@
+.home{
+    font-size: 30px;
+    color: black;
+    position: fixed;
+    cursor: pointer;
+    top: 50px;
+    right: 50px;
+}
+.customDiv {
+    text-align: center;
+    padding: 20px;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background: #2779a7;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.container {
+    top: 40px;
+    height: auto;
+    position: absolute;
+    left: 17%;
+}
+table {
+    margin-top: auto;
+    height: auto;
+    width: 1200px;
+    border-collapse: collapse;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px rgba(3, 30, 3, 0.3);
+}
+th,
+td {
+    padding: 25px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+th {
+    text-align: left;
+}
+thead,
+th {
+    background-color: #55608f;
+}

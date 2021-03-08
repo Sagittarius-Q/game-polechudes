@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New question</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/form.css}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="home">
+    <a class="home" th:href="@{/home}"> <i class="fas fa-home"></i></a>
+</div>
+    <div>
+        <form class="login-box" action="#" th:action="@{/question/add}" th:object="${question}" method="post">
+            <h1>Create new Question</h1>
+            <div class="textbox">
+                <label for="name" ></label>
+                <input id="name" th:field="*{name}" type="text" th:errorclass="error" name="hint" placeholder="Name of Question" minlength="1" maxlength="15">
+            </div>
+            <div class="textbox">
+                <label for="hint"></label>
+                <input id="hint" th:field="*{hint}" type="text" th:errorclass="error" name="Question" placeholder="Hint" minlength="4" maxlength="30">
+            </div>
+            <div class="textbox">
+                <label for="answer"></label>
+                <input id="answer" th:field="*{answer}" type="text" name="answer" th:errorclass="error" placeholder="Answer" minlength="3" maxlength="15">
+            </div>
+            <label>
+                <input class="btn" type="submit" name="add" value="Add">
+            </label>
+        </form>
+    </div>
+
+</body>
+</html>

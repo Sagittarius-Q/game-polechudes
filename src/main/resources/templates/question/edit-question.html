@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit question</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/form.css}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="home">
+    <a class="home" th:href="@{/home}"> <i class="fas fa-home"></i></a>
+</div>
+<div>
+    <form class="login-box" action="#" th:action="@{/question/update}" th:object="${question}" method="post">
+        <h1> Edit Question </h1>
+        <div>
+            <input th:field="*{id}" type="hidden">
+        </div>
+        <div class="textbox">
+            <label>
+            <input id="name" th:field="*{name}" type="text" name="hint" th:errorclass="error" placeholder="Name of Question" minlength="1" maxlength="15">
+            </label>
+        </div>
+        <div class="textbox">
+            <label>
+            <input id="hint"  th:field="*{hint}" type="text" name="Question" th:errorclass="error" placeholder="Hint" minlength="4" maxlength="30">
+            </label>
+        </div>
+        <div class="textbox">
+            <label>
+            <input id="answer" th:field="*{answer}" type="text" name="answer" th:errorclass="error" placeholder="Answer" minlength="3" maxlength="15" >
+            </label>
+        </div>
+        <label>
+            <input class="btn" type="submit" name="add" value="Save">
+        </label>
+    </form>
+</div>
+
+</body>
+</html>

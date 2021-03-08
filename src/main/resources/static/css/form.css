@@ -1,0 +1,57 @@
+.error{
+    background: red;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #89b0c5;
+}
+.login-box{
+    height: auto;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 4px 0;
+    margin: 20px 0;
+    border: 2px solid  #000000;
+}
+
+.textbox input{
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 10px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.btn{
+    height: 40px;
+    width: 100%;
+    background: green;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.btn{
+    margin-top: 20px;
+}
+#home{
+    font-size: 30px;
+    color: black;
+    position: fixed;
+    cursor: pointer;
+    top: 50px;
+    right: 50px;
+}

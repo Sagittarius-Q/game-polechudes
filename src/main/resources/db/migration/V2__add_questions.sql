@@ -1,0 +1,10 @@
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'city', 'capital of France', 'paris');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'animal', 'home animal','cat');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'plants', 'The plant parts that take in water and minerals from the soil', 'root');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'actor', '**** Smith', 'will');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'virus', 'name of virus that causes covid-19', 'corona');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'metal', 'the metal exists in periodic table,atomic number is 79', 'gold');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'scientist', '****** einstein', 'albert');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'software', 'the popular java framework', 'spring');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'hardware', 'input hardware device', 'keyboard');
+insert into question (id, name, hint, answer) values (nextval('question_seq'), 'country', 'largest country in the world', 'russia');

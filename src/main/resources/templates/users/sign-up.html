@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/form.css}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="home">
+    <a class="home" th:href="@{/}"> <i class="fas fa-home"></i></a>
+</div>
+<div>
+    <form  class="login-box" action="#" th:action="@{/user}" th:object="${user}" method="post">
+        <h1>Sign Up</h1>
+        <div class="textbox">
+            <input type="text" th:field="*{name}" name="username" placeholder="Username" minlength="4" maxlength="10">
+        </div>
+        <div class="textbox">
+            <input type="email" th:field="*{email}" name="email" placeholder="Email">
+        </div>
+        <div class="textbox">
+            <input type="password" th:field="*{password}" name="password" placeholder="Password" minlength="4" maxlength="10">
+        </div>
+        <label>
+            <input class="btn" type="submit" name="sign up">
+        </label>
+    </form>
+</div>
+</body>
+</html>

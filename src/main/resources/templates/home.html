@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+<div id="modal">
+    <div class="history">
+        <a style="text-decoration: none; color: black;"  th:href="@{/history}">History</a>
+    </div>
+    <div class="setting">
+        <a style="text-decoration: none; color: black;" th:href="@{/question}">Setting</a>
+    </div>
+    <div class="playGame">
+        <a style="text-decoration: none; color: darkgreen;"  th:href="@{/game}">Play Game</a>
+    </div>
+    <div class="logout">
+        <a style="text-decoration: none; color: darkred;"  th:href="@{/logout}">Logout</a>
+    </div>
+</div>
+</body>
+</html>

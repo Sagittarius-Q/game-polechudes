@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Questions</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/table.css}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+    <a class="home" th:href="@{/home}"> <i class="fas fa-home"></i></a>
+    <table>
+        <thead>
+        <tr>
+            <th>Question history</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each = "element : ${history}">
+            <td th:text="${element}"></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+
+</html>
